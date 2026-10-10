@@ -16,11 +16,11 @@ def count_tweets(alltweets, word):
     counter = 0
     for j in alltweets:
         try:
-            if ((word).lower in (j['text']).lower()):
+            if ((word).lower() in (j['text']).lower()):
                 counter += 1
         except KeyError:
             try:
-                if ((word).lower in (j['full_text']).lower()):
+                if ((word).lower() in (j['full_text']).lower()):
                     counter += 1
             except KeyError:
                 pass
