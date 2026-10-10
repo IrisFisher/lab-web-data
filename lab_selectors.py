@@ -120,7 +120,8 @@ def first_link(html):
         try:
             return link['href']
         except KeyError:
-            return None
+            pass
+    return None
 
 def extract_listings(html):
     '''
