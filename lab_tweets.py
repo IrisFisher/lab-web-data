@@ -24,6 +24,7 @@ def count_tweets(alltweets, word):
                     counter += 1
             except KeyError:
                 pass
+    print(word + ': ' + str(counter))
     return(counter)
 
 for i in range(2009,2019):
@@ -31,6 +32,8 @@ for i in range(2009,2019):
     with open(file, encoding='utf-8') as f:
         for i in json.load(f):
             alltweets.append(i) #alltweets.append
+
+print('total: ' + str(len(alltweets)))
 
 fake_news = count_tweets(alltweets, 'fake news')
 maga = count_tweets(alltweets, 'maga')

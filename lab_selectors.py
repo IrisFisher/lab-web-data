@@ -116,9 +116,11 @@ def first_link(html):
     '''
     # TODO: select 'a[href]'; return the first one's href, or None if the list is empty
     soup = BeautifulSoup(html, 'html.parser')
-    for link in soup.select('a'):
-        return link['href']
-    return None
+    try:
+        for link in soup.select('a'):
+            return link['href']
+    except KeyError:
+        return None
 
 def extract_listings(html):
     '''
