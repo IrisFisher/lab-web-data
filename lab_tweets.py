@@ -44,7 +44,7 @@ swamp = count_tweets(alltweets, 'swamp')
 trump = count_tweets(alltweets, 'trump')
 wall = count_tweets(alltweets, 'wall')
 
-fake_news_percent = fake_news / len(alltweets)
+fake_news_percent = (fake_news / len(alltweets))*100
 maga_percent = (maga / len(alltweets)) * 100
 mexico_percent = (mexico / len(alltweets)) * 100
 obama_percent = (obama / len(alltweets)) * 100

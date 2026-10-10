@@ -1,8 +1,6 @@
 # [lab-web-data](https://csci40.rtealwitter.com/topics/05_web_scraping/lab.html)
 
-| phrase            | percent of tweets |
-| ----------------- | ----------------- |
-|         Fake news | 00.01             |
+|         Fake news | 00.88             |
 |              MAGA | 00.93             |
 |            Mexico | 00.45             |
 |             Obama | 07.73             |
